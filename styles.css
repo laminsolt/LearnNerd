@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+    background-color: #020106;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.7rem 1.5rem;
+}
+
+header > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+header p{
+    font-size: 23.44px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+header nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 400;
+}
+header > div > div {
+    display: flex;
+    flex-direction: row;
+    gap: 16.41px;
+}
+header > div > div > button.join{
+    color:#FFFFFF;
+    border: 1.17px solid #FFFFFF;
+    border-radius: 5.86px;
+    padding: 9.38px 23.44px;
+    background: transparent;
+}
+
+header > div > div > button.login{
+    color: #8A2BE2;
+    border: 1.17px solid #FFFFFF;
+    border-radius: 5.86px;
+    padding: 9.38px 23.44px;
+    background-color: #FFFFFF;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 3rem;
+}
+
+.elipses{
+    border-radius: 50%;
+}
+main > section.landing{
+    width: 100%;
+}
+main > section.landing > button.get-started{
+    color:#8A2BE2;
+    border: 1.17px solid #FFFFFF;
+    border-radius: 5.86px;
+    padding: 14.02px 28.13px;
+    background: #FFFFFF;
+    margin: 20px 0;
+}
+main >section:last-of-type{
+    overflow: hidden;
+    width: auto;
+    display: flex;
+    justify-content: end;
+}
+main >section:last-of-type img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+main > section.landing > button.learn-more{
+    color: #FFFFFF;
+    border: 1.17px solid #FFFFFF;
+    border-radius: 5.86px;
+    padding: 14.02px 28.13px;
+    background: transparent;
+    margin: 20px 0;
+}
