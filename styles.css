@@ -12,11 +12,31 @@ body {
     background-color: #020106;
 }
 
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Using your purple #8A2BE2 */
+ background: 
+    /* Increased opacity from 0.4 to 0.6 and size of the gradient */
+    radial-gradient(circle at 25% 40%, rgba(138, 43, 226, 0.6) 0%, transparent 55%),
+    radial-gradient(circle at 80% 50%, rgba(138, 43, 226, 0.25) 0%, transparent 45%);
+  /* The Secret Sauce: Blur and Z-index */
+  filter: blur(60px); 
+  z-index: -1; /* Ensures it stays behind your content */
+  pointer-events: none; /* Allows you to click things 'through' the glow */
+}
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0.7rem 1.5rem;
+    position: relative;
+    z-index: 10;
 }
 
 header > div {
@@ -39,11 +59,18 @@ header nav a {
     margin: 0 10px;
     font-weight: 400;
 }
+
+header nav a:hover{
+    color: #8A2BE2;
+    cursor: pointer;
+}
+
 header > div > div {
     display: flex;
     flex-direction: row;
     gap: 16.41px;
 }
+
 header > div > div > button.join{
     color:#FFFFFF;
     border: 1.17px solid #FFFFFF;
@@ -60,6 +87,30 @@ header > div > div > button.login{
     background-color: #FFFFFF;
 }
 
+button.trans:hover {
+    color: #8A2BE2;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+button.col:hover{
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+main > section.landing > button.get-started:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+main > section.landing > button.learn-more:hover {
+    background-color: #FFFFFF;
+    color: #8A2BE2;
+    cursor: pointer;
+}
+
 main {
     display: flex;
     flex-direction: row;
@@ -69,12 +120,31 @@ main {
     padding: 0 3rem;
 }
 
+main > section.landing > div > img.elipses {
+    margin-right: -15px; /* Pulls the next image closer to overlap */
+    position: relative; /* Ensures they stack correctly */
+    z-index: 1;
+}
+
 .elipses{
     border-radius: 50%;
 }
 main > section.landing{
     width: 100%;
 }
+
+main > section.landing > h1{
+    line-height: 120%;
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+
+main > section.landing > p{
+    line-height: 150%;
+    font-weight: 400;
+    letter-spacing: 0%;
+}
+
 main > section.landing > button.get-started{
     color:#8A2BE2;
     border: 1.17px solid #FFFFFF;
@@ -84,7 +154,8 @@ main > section.landing > button.get-started{
     margin: 20px 0;
 }
 main >section:last-of-type{
-    overflow: hidden;
+    position: relative; /* This traps absolute elements inside it */
+    overflow: visible; /* IMPORTANT: Allows the arrow to stick out to the left */
     width: auto;
     display: flex;
     justify-content: end;
@@ -93,8 +164,18 @@ main >section:last-of-type img{
     height:100%;
     width: 100%;
     object-fit: cover;
-
 }
+
+main >section:last-of-type img.img1{
+    position: absolute;
+    top: 28%;         /* Adjust this to move it up/down */
+    left: -150px;    /* Negative value pulls it left towards the text */
+    width: 144px;
+    height: 125px;
+    z-index: 2;
+    transform: rotate(15deg);
+}
+
 main > section.landing > button.learn-more{
     color: #FFFFFF;
     border: 1.17px solid #FFFFFF;
@@ -103,3 +184,101 @@ main > section.landing > button.learn-more{
     background: transparent;
     margin: 20px 0;
 }
+
+article.Enroll{
+    
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.trust > h4{
+   color: #4C4452; 
+   font-style: italic;
+}
+
+article.Enroll > div.trusted{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 1.5rem;
+}
+
+article.Enroll > div.trusted > div{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.courses{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.courses h2{
+    color: #4C4452;
+    font-style: bold;
+    margin: 1rem 0;
+    line-height: 120%;
+}
+
+.courses p{
+    color: #7E7C86;
+    font-style: normal;
+    margin: 1rem 0;
+    line-height: 150%;
+}
+
+.courses > div > div.f1{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.courses > div > div >h4{
+    color: #322C49;
+    font-style: semi-bold;
+}
+
+.courses > div > div > p{
+    color: #7E7C86;
+}
+
+.courses > div >button{
+    color:#8A2BE2;
+    border: 1.17px solid #8A2BE2;
+    border-radius: 5.86px;
+    padding: 14.02px 28.13px;
+    background-color: transparent;
+}
+
+.courses > div >button:hover{
+    background-color: #8A2BE2;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.courses > div > a {
+    color: #322C49;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.courses > div > a:hover{
+    color: #8A2BE2;
+    cursor: pointer;
+}
+
+.Enroll > .courses > .placeholder > img {
+  width: 469.36px;
+  height: 487.64px;
+  border-radius: 15.24px;
+  object-fit: cover; 
+  image-rendering: smooth; 
+}
+
