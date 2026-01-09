@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -282,3 +282,159 @@ article.Enroll > div.trusted > div{
   image-rendering: smooth; 
 }
 
+article.offers{
+    height: 100vh;
+    background-color: #FAF8FF;
+    background-image: url(/images/bckimg.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem 3rem;
+}
+
+article.offers > section > h1{
+    color: #4C4452;
+    font-weight: bold;
+    line-height: 120%;
+    text-align: center;
+}
+
+article.offers > section > p{
+    color: #7E7C86;
+    font-weight: normal;
+    line-height: 150%;
+    text-align: center;
+    max-width: 600px;
+}
+
+article.offers > div.benefits{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+article.offers > div.benfits > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 200px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+article.offers > div.benefits > div > h4{
+    color: #322C49;
+    font-weight: semi-bold;
+    line-height: 140%;
+    text-align: center;
+}
+
+article.offers > div.benefits > div > p{
+    color: #7E7C86;
+    font-weight: normal;
+    line-height: 150%;
+    text-align: center;
+}
+
+article.offers > div.benefits > div > img{
+    width: 350.79px;
+    height: 211px;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+article.offers > div.benefits > div > button{
+    color:#8A2BE2;
+    border: 1.17px solid #8A2BE2;
+    border-radius: 11.72px;
+    padding: 14.02px 28.13px;
+    background-color: transparent;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+article.learn{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+    gap: 3rem;
+}
+
+article.learn > section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 11rem;
+}
+
+article.learn > section > h2{
+    color: #4C4452;
+    font-weight: bold;
+    line-height: 125%;
+    max-width: 400px;
+    text-align: left;
+    font-size: 2rem;
+}
+
+article.learn > section > p{
+    color: #7E7C86;
+    font-weight: normal;
+    line-height: 150%;
+    max-width: 550px;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+article.learn > div.experience{
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+article.learn > div.experience > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    max-width: 400px;
+    text-align: center;
+}
+
+article.learn > div.experience > div > h3{
+    color: #322C49;
+    font-weight: semi-bold;
+    line-height: 140%;
+    text-align: left;
+}
+
+article.learn > div.experience > div:first-of-type > h3{
+    max-width: 300px;
+}
+
+article.learn > div.experience > div:last-of-type > h3{
+    max-width: 350px;
+}
+
+article.learn > div.experience > div > p{
+    color: #7E7C86;
+    font-weight: normal;
+    line-height: 150%;
+    text-align: left;
+}
+
+article.learn > div.experience > div > a{
+    color: #322C49;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
