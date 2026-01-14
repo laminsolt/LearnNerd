@@ -520,3 +520,177 @@ article.why > div.reasons > div > section > div > h3{
     line-height: 150%;
     font-family: "Roboto", sans-serif;
 }
+
+article.faq{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #FAF8FF;
+    background-image: url(/images/bckimg.svg);
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+article.faq > section{
+    padding: 0 3rem;
+}
+
+article.faq > section > h3{
+    margin-top: 1rem;
+    color: #4C4452;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    line-height: 120%;
+    text-align: center;
+}
+
+article.faq > section > p{
+    color: #7E7C86;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    line-height: 150%;
+    text-align: center;
+}
+article.faq > div.questions{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+article.faq > div.questions > div{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 1rem 1.5rem;
+    border: 1.76px solid radial-gradient(50% 50% at 50% 50%, #F0E9F7 0%, #F9F2FF 100%);
+    border-radius: 0.8rem;
+    width: 48%;
+    margin-bottom: 1rem;
+}
+
+article.faq > div.questions > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article.faq > div.questions > div > div > h4{
+    color: #4C4452;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+article.faq > div.questions > div > div > img{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    background-color: #ECECEC;
+    border: 2.34px solid #FBFBFB;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+article.faq > div.questions > div > p{
+    color: #7E7C86;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    line-height: 150%;
+    margin-top: 1rem;
+}
+
+article.insights{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+    gap: 3rem;
+}
+
+article.insights > section{
+    padding: 3rem 0 0rem;
+}
+
+article.insights > section > h1{
+    color: #4C4452;
+    font-weight: bold;
+    line-height: 120%;
+    text-align: center;
+}
+
+article.insights > section > p{
+    color: #7E7C86;
+    font-weight: normal;
+    line-height: 150%;
+    text-align: center;
+    max-width: 600px;
+}
+
+article.insights > div.cards{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article.insights > div.cards > div{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+article.insights > div.cards > div > section.sec1 > h6 {
+    color: #8A2BE2;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+article.insights > div.cards > div > section.sec1 > h3 {
+    color: #322C49;
+    font-weight: 600;
+    line-height: 140%;
+    margin-top: 0.5rem;
+}
+
+article.insights > div.cards > div > section.sec1 > p {
+    color: #7E7C86;
+    font-weight: normal;
+    line-height: 150%;
+    margin-top: 0.5rem;
+}
+
+article.insights > div.cards > div > section.sec2 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+article.insights > div.cards > div > section.sec2 > img {
+    height: 56.27px;
+    width: 56.27px;
+    border-radius: 50%;
+}
+
+article.insights > div.cards > div > section.sec2 > div > h3 {
+    color: #4C4452;
+    font-weight: 600;
+    line-height: 150%;
+    font-family: "Roboto", sans-serif;
+}
+
+article.insights > div.cards > div > section.sec2 > div > p {
+    color: #7E7C86;
+    line-height: 150%;
+    font-family: "Roboto", sans-serif;
+}
