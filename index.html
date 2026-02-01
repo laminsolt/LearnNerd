@@ -177,43 +177,47 @@
             <p>Find answers to your most pressing questions about our courses and platform here.</p>
         </section>
         <div class="questions">
-            <div>
+            <div class="faq-item">
                 <div>
                     <h4>What courses do you offer?</h4>
-                    <img src="/images/iconoir_minus.png" alt="">
+                    <img src="/images/iconoir_plus.png" alt="Expand"> 
                 </div>
                 <p>We offer a variety of courses focused on navigating Web3 and trading meme coins. Our curriculum is designed to empower students with the knowledge and skills needed to thrive in the digital economy. Each course is tailored to different experience levels, ensuring everyone can find the right fit.</p>
             </div>
-            <div>
+            <div class="faq-item">
                 <div>
                     <h4>Is there a community I can join</h4>
-                    <img src="/images/iconoir_plus.png" alt="">
+                    <img src="/images/iconoir_plus.png" alt="Expand">
                 </div>
+                <p>Yes, we have a vibrant community you can join to connect with peers and mentors.</p>
             </div>
-            <div>
+            <div class="faq-item">
                 <div>
                     <h4>Are the courses free?</h4>
-                    <img src="/images/iconoir_plus.png" alt="">
+                    <img src="/images/iconoir_plus.png" alt="Expand">
                 </div>
+                <p>We offer both free introductory courses and premium advanced courses.</p>
             </div>
-            <div>
+            <div class="faq-item">
                 <div>
                     <h4>What if I need help?</h4>
-                    <img src="/images/iconoir_minus.png" alt="">
+                    <img src="/images/iconoir_plus.png" alt="Expand">
                 </div>
                 <p>If you have any questions or need assistance, our support team is here to help. You can reach out via our contact page or through the community forums. We are committed to your success and are ready to assist you.</p>
             </div>
-            <div>
+            <div class="faq-item">
                 <div>
                     <h4>How do I enroll</h4>
-                    <img src="/images/iconoir_plus.png" alt="">
+                    <img src="/images/iconoir_plus.png" alt="Expand">
                 </div>     
+                <p>You can enroll by clicking the "Start Learning" button on the homepage.</p>
             </div>
-            <div>
+            <div class="faq-item">
                 <div>
                     <h4>How safe is my data on LearnNerd?</h4>
-                    <img src="/images/iconoir_plus.png" alt="">
+                    <img src="/images/iconoir_plus.png" alt="Expand">
                 </div>
+                <p>We take data security very seriously and use industry-standard encryption.</p>
             </div>
         </div>
     </article>
@@ -270,5 +274,93 @@
             </div>
         </div>
     </article>
+    <!-- ================= CTA SECTION ================= -->
+    <section class="cta">
+    <div class="cta-content">
+        <h2>Ready to Master Web3? Let’s Go!</h2>
+        <p>
+        Start learning today and take your crypto trading skills to the next level
+        with expert-led courses.
+        </p>
+
+        <div class="cta-buttons">
+        <a href="#" class="btn primary">Sign Up</a>
+        <a href="#" class="btn secondary">Learn More</a>
+        </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+            <h3>LearnNerd</h3>
+            <p>
+                LearnNerd is your go-to platform for mastering Web3 and meme coin
+                trading with ease.
+            </p>
+            </div>
+
+            <!-- Company -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#">About us</a>
+                <a href="#">Courses Offered</a>
+                <a href="#">Blog Posts</a>
+                <a href="#">FAQs</a>
+                <a href="#">Support Center</a>
+            </div>
+
+            <!-- Product -->
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <a href="#">Contact Us</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Community Forums</a>
+                <a href="#">Webinars</a>
+                <a href="#">Resource Center</a>
+            </div>
+
+            <!-- Legal -->
+            <div class="footer-links">
+                <h4>Updraft</h4>
+                <a href="#">Docs</a>
+                <a href="#">Findings</a>
+                <a href="#">Audits</a>
+                <a href="#">Checklist</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 LearnNerd. All rights reserved.</p>
+
+            <div class="socials">
+                <a href="#"><img src="/images/fb icon.png" alt=""></a>
+                <a href="#"><img src="/images/Igicon.png" alt=""></a>
+                <a href="#"><img src="/images/xicon.png" alt=""></a>
+                <a href="#"><img src="/images/LinkedIn.png" alt=""></a>
+                <a href="#"><img src="/images/Youtubeicon.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const header = item.querySelector('div');
+            header.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('open');
+                    const img = i.querySelector('img');
+                    if (img) { img.src = '/images/iconoir_plus.png'; img.alt = 'Expand'; }
+                });
+                if (!isOpen) {
+                    item.classList.add('open');
+                    const img = item.querySelector('img');
+                    if (img) { img.src = '/images/iconoir_minus.png'; img.alt = 'Collapse'; }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
